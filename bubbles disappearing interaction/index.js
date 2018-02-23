@@ -85,11 +85,11 @@ function Circle(x, y, dx, dy, radius, color, fill){
     this.y += this.dy;
 
     if (Math.abs(mouse.x - this.x) < 50 && Math.abs(mouse.y - this.y) < 50 && this.radius < 40){
-      this.radius += 1;
+      this.radius += 0.5;
     }
 
     else if(this.radius > 0) {
-        this.radius -=1;
+        this.radius -= 0.5;
     }
 
 
