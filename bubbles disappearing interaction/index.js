@@ -9,7 +9,7 @@ console.log("Width: " + innerWidth);
 console.log("Height: " + innerHeight);
 
 var circle = [],
-    SIZE = 1000;
+    SIZE = 5000;
 
 var mouse = {
     x: undefined,
@@ -84,7 +84,7 @@ function Circle(x, y, dx, dy, radius, color, fill){
     this.x += this.dx;
     this.y += this.dy;
 
-    if (Math.abs(mouse.x - this.x) < 50 && Math.abs(mouse.y - this.y) < 50 && this.radius < 40){
+    if (Math.abs(mouse.x - this.x) < 20 && Math.abs(mouse.y - this.y) < 20 && this.radius < 40){
       this.radius += 0.5;
     }
 
