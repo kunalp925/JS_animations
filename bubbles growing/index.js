@@ -52,13 +52,14 @@ for(var i = 0; i<SIZE; i++){
       if(dy==0){
         dy = Math.floor(((Math.random()-0.5)*3));
       }
-
-      console.log("Color: " + colors);
-      console.log("Starting x loc: " + x);
-      console.log("Starting y loc: " + y);
-      console.log("Starting dx: " + dx);
-      console.log("Starting dy: " + dy);
-      console.log("Radius: " + radius);
+      if( dy ==0 || dx == 0){
+        console.log("Color: " + colors);
+        console.log("Starting x loc: " + x);
+        console.log("Starting y loc: " + y);
+        console.log("Starting dx: " + dx);
+        console.log("Starting dy: " + dy);
+        console.log("Radius: " + radius);
+      }
 
       circle.push(new Circle(x, y, dx, dy, radius, colors, fill));
 }
@@ -134,13 +135,6 @@ function init(){
         if(dy==0){
           dy = Math.floor(((Math.random()-0.5)*3));
         }
-
-        console.log("Color: " + colors);
-        console.log("Starting x loc: " + x);
-        console.log("Starting y loc: " + y);
-        console.log("Starting dx: " + dx);
-        console.log("Starting dy: " + dy);
-        console.log("Radius: " + radius);
 
         circle.push(new Circle(x, y, dx, dy, radius, colors, fill));
   }
